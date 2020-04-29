@@ -1,0 +1,30 @@
+{
+  "name": "@keyko-io/multisigwallet",
+  "version": "0.1.0",
+  "description": "Ethereum MultiSignature Wallet. Main module, for installing all dependencies",
+  "scripts": {
+    "test": "echo null",
+    "install": "npx truffle compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keyko-io/nevermined-multisigwallet.git"
+  },
+  "author": "Gnosis (https://gnosis.pm/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keyko-io/nevermined-multisigwallet/issues"
+  },
+  "homepage": "https://github.com/keyko-io/nevermined-multisigwallet#readme",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": false
+    }
+  },
+  "dependencies": {
+    "truffle": "~5.0.25",
+    "truffle-hdwallet-provider": "~1.0.12",
+    "web3-provider-engine": "~15.0.0"
+  }
+}
