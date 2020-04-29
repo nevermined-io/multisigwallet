@@ -1,7 +1,10 @@
-Ethereum Multisignature Wallet
-===================
+[![banner](https://raw.githubusercontent.com/keyko-io/assets/master/images/logo/small/keyko_logo@2x-100.jpg)](https://keyko.io)
 
-[![Join the chat at https://gitter.im/gnosis/MultiSigWallet](https://badges.gitter.im/gnosis/MultiSigWallet.svg)](https://gitter.im/gnosis/MultiSigWallet?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Ethereum Multisignature Wallet
+> MultiSigWallet forked from Gnosis
+
+
+![Build](https://github.com/keyko-io/nevermined-multisigwallet/workflows/Build/badge.svg)
 
 The purpose of multisig wallets is to increase security by requiring multiple parties to agree on transactions before execution. Transactions can be executed only when confirmed by a predefined number of owners. A web user interface can be found [here](/dapp).
 
