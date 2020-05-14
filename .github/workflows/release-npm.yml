@@ -19,8 +19,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: Pre-install
         run: |
-          npm i
-      - run: npm ci
+          yarn
       - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
