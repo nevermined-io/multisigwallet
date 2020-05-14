@@ -4,6 +4,7 @@
   "description": "Ethereum MultiSignature Wallet. Main module, for installing all dependencies",
   "scripts": {
     "test": "echo null",
+    "clean": "rm -rf ./build/",
     "install": "npx truffle compile"
   },
   "repository": {
@@ -23,7 +24,7 @@
     }
   },
   "dependencies": {
-    "truffle": "~5.0.25",
+    "truffle": "~5.1.25",
     "truffle-hdwallet-provider": "~1.0.12",
     "web3-provider-engine": "~15.0.0"
   }
