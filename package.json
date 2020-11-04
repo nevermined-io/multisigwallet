@@ -1,6 +1,6 @@
 {
-  "name": "@keyko-io/multisigwallet",
-  "version": "0.2.0",
+  "name": "@nevermined-io/multisigwallet",
+  "version": "0.2.1",
   "description": "Ethereum MultiSignature Wallet. Main module, for installing all dependencies",
   "scripts": {
     "test": "echo null",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keyko-io/nevermined-multisigwallet.git"
+    "url": "git+https://github.com/nevermined-io/multisigwallet.git"
   },
   "author": "Gnosis (https://gnosis.pm/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/keyko-io/nevermined-multisigwallet/issues"
+    "url": "https://github.com/nevermined-io/multisigwallet/issues"
   },
-  "homepage": "https://github.com/keyko-io/nevermined-multisigwallet#readme",
+  "homepage": "https://github.com/nevermined-io/multisigwallet#readme",
   "eslintConfig": {
     "env": {
       "browser": true,

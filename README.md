@@ -1,12 +1,11 @@
-[![banner](https://raw.githubusercontent.com/keyko-io/assets/master/images/logo/nevermined_logo_1.png)](https://nevermined.io)
-
+[![banner](https://raw.githubusercontent.com/nevermined-io/assets/main/images/logo/banner_logo.png)](https://nevermined.io)
 
 # Ethereum Multisignature Wallet
 > MultiSigWallet forked from Gnosis
 
 
-![Build](https://github.com/keyko-io/nevermined-multisigwallet/workflows/Build/badge.svg)
-![NPM Release](https://github.com/keyko-io/nevermined-multisigwallet/workflows/NPM%20Release/badge.svg)
+![Build](https://github.com/nevermined-io/multisigwallet/workflows/Build/badge.svg)
+![NPM Release](https://github.com/nevermined-io/multisigwallet/workflows/NPM%20Release/badge.svg)
 
 The purpose of multisig wallets is to increase security by requiring multiple parties to agree on transactions before execution. Transactions can be executed only when confirmed by a predefined number of owners. A web user interface can be found [here](/dapp).
 
@@ -36,8 +35,8 @@ Being used by
 Install
 -------------
 ```
-git clone https://github.com/keyko-io/nevermined-multisigwallet.git
-cd nevermined-multisigwallet
+git clone https://github.com/nevermined-io/multisigwallet.git
+cd multisigwallet
 npm install
 ```
 
