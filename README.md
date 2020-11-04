@@ -30,7 +30,7 @@ Being used by
 - [MysteriumNetwork](https://mysterium.network/)
 - [Weifund](http://weifund.io/)
 - StabL
-- [Ocean Protocol](https://oceanprotocol.com)
+- [Keyko](https://keyko.io)
 
 Install
 -------------
