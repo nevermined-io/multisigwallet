@@ -1,6 +1,6 @@
 {
   "name": "@nevermined-io/multisigwallet",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Ethereum MultiSignature Wallet. Main module, for installing all dependencies",
   "scripts": {
     "test": "echo null",
