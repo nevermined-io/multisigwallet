@@ -1,5 +1,4 @@
-pragma solidity ^0.4.15;
-
+pragma solidity ^0.6.12;
 
 /// @title Test token contract - Allows testing of token transfers with multisig wallet.
 contract TestToken {
@@ -13,8 +12,8 @@ contract TestToken {
     /*
      *  Constants
      */
-    string constant public name = "Test Token";
-    string constant public symbol = "TT";
+    string constant public name = 'Test Token';
+    string constant public symbol = 'TT';
     uint8 constant public decimals = 1;
 
     /*
@@ -49,7 +48,7 @@ contract TestToken {
     /// @dev Transfers sender's tokens to a given address. Returns success.
     /// @param _to Address of token receiver.
     /// @param _value Number of tokens to transfer.
-    /// @return Returns success of function call.
+    /// @return success Returns success of function call.
     function transfer(address _to, uint256 _value) onlyPayloadSize(2 * 32)
         public
         returns (bool success)
@@ -57,7 +56,7 @@ contract TestToken {
         require(balances[msg.sender] >= _value);
         balances[msg.sender] -= _value;
         balances[_to] += _value;
-        Transfer(msg.sender, _to, _value);
+        emit Transfer(msg.sender, _to, _value);
         return true;
     }
 
@@ -65,7 +64,7 @@ contract TestToken {
     /// @param _from Address from where tokens are withdrawn.
     /// @param _to Address to where tokens are sent.
     /// @param _value Number of tokens to transfer.
-    /// @return Returns success of function call.
+    /// @return success Returns success of function call.
     function transferFrom(address _from, address _to, uint256 _value)
         public
         returns (bool success)
@@ -74,29 +73,29 @@ contract TestToken {
         balances[_to] += _value;
         balances[_from] -= _value;
         allowed[_from][msg.sender] -= _value;
-        Transfer(_from, _to, _value);
+        emit Transfer(_from, _to, _value);
         return true;
     }
 
     /// @dev Sets approved amount of tokens for spender. Returns success.
     /// @param _spender Address of allowed account.
     /// @param _value Number of approved tokens.
-    /// @return Returns success of function call.
+    /// @return success Returns success of function call.
     function approve(address _spender, uint256 _value)
         public
         returns (bool success)
     {
         allowed[msg.sender][_spender] = _value;
-        Approval(msg.sender, _spender, _value);
+        emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
     /// @dev Returns number of allowed tokens for given address.
     /// @param _owner Address of token owner.
     /// @param _spender Address of token spender.
-    /// @return Returns remaining allowance for spender.
+    /// @return remaining Returns remaining allowance for spender.
     function allowance(address _owner, address _spender)
-        constant
+        view
         public
         returns (uint256 remaining)
     {
@@ -105,9 +104,9 @@ contract TestToken {
 
     /// @dev Returns number of tokens owned by given address.
     /// @param _owner Address of token owner.
-    /// @return Returns balance of owner.
+    /// @return balance Returns balance of owner.
     function balanceOf(address _owner)
-        constant
+        view
         public
         returns (uint256 balance)
     {

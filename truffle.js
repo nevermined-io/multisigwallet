@@ -56,26 +56,6 @@ module.exports = {
             gasPrice: 10000,
             from: '0xe2DD09d719Da89e5a3D0F2549c7E24566e947260'
         },
-        // duero the ocean testnet
-        duero: {
-            provider: () => setupWallet(
-                url || `https://duero.dev-ocean.com`
-            ),
-            network_id: 0x897, // 2199
-            gas: 6000000,
-            gasPrice: 10000,
-            from: '0x90eE7A30339D05E07d9c6e65747132933ff6e624'
-        },
-        // nile the ocean beta network
-        nile: {
-            provider: () => setupWallet(
-                url || `https://nile.dev-ocean.com`
-            ),
-            network_id: 0x2323, // 8995
-            gas: 6000000,
-            gasPrice: 10000,
-            from: '0x90eE7A30339D05E07d9c6e65747132933ff6e624'
-        },
         // kovan the ethereum testnet
         kovan: {
             provider: () => setupWallet(
@@ -102,21 +82,11 @@ module.exports = {
             from: '0x3f3c526f3A8623b11aAD5c30d6De88E45e385FaD',
             gas: 7 * 1000000,
             gasPrice: utils.toWei('8', 'gwei')
-        },
-        // pacific the ethereum mainnet
-        pacific: {
-            provider: () => setupWallet(
-                url || `https://pacific.oceanprotocol.com`
-            ),
-            network_id: 0xCEA11, // 846353
-            from: '0xba3e0ec852dc24ca7f454ea545d40b1462501711',
-            gas: 6 * 1000000,
-            gasPrice: utils.toWei('10', 'mwei')
         }
     },
     compilers: {
         solc: {
-            version: '0.4.25',
+            version: '0.6.12',
             settings: {
                 optimizer: {
                     enabled: true,
